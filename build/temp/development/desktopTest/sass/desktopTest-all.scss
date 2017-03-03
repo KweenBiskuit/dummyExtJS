@@ -1,5 +1,5 @@
 $app-name:  dynamic( 'desktopTest' );
-$image-search-path: 'C:/Users/croussel/Documents/Learning/EXTJS/testExtdesktop/build/development/desktopTest/resources';
+$image-search-path: 'C:/Users/croussel/Documents/Learning/EXTJS/dummyExt/build/development/desktopTest/resources';
 $theme-name:  dynamic( 'theme-triton' );
 $include-ext-abstractcomponent: dynamic(true);;
 $include-ext-abstractcontainer: dynamic(true);;
@@ -911,10 +911,14 @@ $include-ext-window-toast: dynamic(true);;
 $include-ext-window-window: dynamic(true);;
 $include-desktoptest-application: dynamic(true);;
 $include-desktoptest-store-personnel: dynamic(true);;
+$include-desktoptest-view-form-formcontroller: dynamic(true);;
+$include-desktoptest-view-main-lab: dynamic(true);;
 $include-desktoptest-view-main-list: dynamic(true);;
 $include-desktoptest-view-main-main: dynamic(true);;
 $include-desktoptest-view-main-maincontroller: dynamic(true);;
 $include-desktoptest-view-main-mainmodel: dynamic(true);;
+$include-desktoptest-view-main-notepad: dynamic(true);;
+$include-destoptest-view-main-nodepadcontroller: dynamic(true);;
 $output-paths: ("path": "../resources");
 
 /* ======================== ETC ======================== */

@@ -10,7 +10,19 @@ Ext.define('desktopTest.view.main.MainController', {
     alias: 'controller.main',
 
     onItemSelected: function (sender, record) {
-        Ext.Msg.confirm('Confirm', 'Are you sure?', 'onConfirm', this);
+        Ext.Msg.confirm('Confirm', 'Are you sure?', 'runner', this);
+    },
+
+    updateConsole: function(){
+        console.log(Ext.Date.format(new Date(), 'g:i:s A'));
+    },
+
+    runner: function(){
+        var taskrunner = new Ext.util.TaskRunner();
+        taskrunner.start({
+            run: this.updateConsole,
+            interval: 1000
+        });
     },
 
     onConfirm: function (choice) {

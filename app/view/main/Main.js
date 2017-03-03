@@ -14,8 +14,11 @@ Ext.define('desktopTest.view.main.Main', {
         'Ext.window.MessageBox',
 
         'desktopTest.view.main.MainController',
+        // 'desktopTest.view.main.NodepadController',
+        // 'desktopTest.view.form.FormController',
         'desktopTest.view.main.MainModel',
-        'desktopTest.view.main.List'
+        'desktopTest.view.main.List',
+        'desktopTest.view.main.Lab'
     ],
 
     controller: 'main',
@@ -26,6 +29,7 @@ Ext.define('desktopTest.view.main.Main', {
     tabBarHeaderPosition: 1,
     titleRotation: 0,
     tabRotation: 0,
+    scrollable: true,
 
     header: {
         layout: {
@@ -83,11 +87,20 @@ Ext.define('desktopTest.view.main.Main', {
             xtype: 'mainlist'
         }]
     }, {
-        title: 'Users',
-        iconCls: 'fa-user',
-        bind: {
-            html: '{loremIpsum}'
-        }
+        title: 'Lab',
+        iconCls: 'fa-flask',
+        items: [{
+            xtype: 'mainlab'
+        }]
+    }, {
+        title: 'Notepad',
+        iconCls: 'fa-pencil-square-o',
+        // bind: {
+        //     html: '{loremIpsum}'
+        // }
+        items: [{
+            xtype: 'notepad'
+        }]
     }, {
         title: 'Groups',
         iconCls: 'fa-users',
